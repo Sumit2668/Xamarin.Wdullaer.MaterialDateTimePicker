@@ -1,0 +1,13 @@
+﻿<metadata>
+	<!-- remove method to solve following error:
+  Vendor/MaterialDateTimePickerBinding/obj/Debug/generated/src/Com.Wdullaer.Materialdatetimepicker.Date.MonthView.cs(34,34): 
+  Error CS0533: `Com.Wdullaer.Materialdatetimepicker.Date.MonthView.MonthViewTouchHelper.GetVisibleVirtualViews(System.Collections.Generic.IList<Java.Lang.Integer>)' 
+  hides inherited abstract member `Android.Support.V4.Widget.ExploreByTouchHelper.GetVisibleVirtualViews(System.Collections.Generic.IList<Java.Lang.Integer>)'
+  (CS0533) (MaterialDateTimePickerBinding)
+  -->
+	<remove-node path="/api/package[@name='com.wdullaer.materialdatetimepicker.date']/class[@name='MonthView.MonthViewTouchHelper']/method[@name='getVisibleVirtualViews' and count(parameter)=1 and parameter[1][@type='java.util.List&lt;java.lang.Integer&gt;']]" />
+	<!-- remove method to solve following error:
+	Vendor/MaterialDateTimePickerBinding/obj/Debug/generated/src/Com.Wdullaer.Materialdatetimepicker.Date.MonthView.cs(36,36): Error CS0534: `Com.Wdullaer.Materialdatetimepicker.Date.MonthView.MonthViewTouchHelper' does not implement inherited abstract member `Android.Support.V4.Widget.ExploreByTouchHelper.GetVisibleVirtualViews(System.Collections.Generic.IList<Java.Lang.Integer>)' (CS0534) (MaterialDateTimePickerBinding)
+	-->
+	<remove-node path="/api/package[@name='com.wdullaer.materialdatetimepicker.date']/class[@name='MonthView.MonthViewTouchHelper']" />
+</metadata>
