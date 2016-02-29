@@ -12,14 +12,14 @@ Three simple steps:
 
 Basically these steps are described in the [Readme.md file of the original library](https://github.com/wdullaer/MaterialDateTimePicker/blob/master/README.md)
 
-{% highlight csharp %}
+```
 //implement OnDateSetListener
 public class HomeView : BaseActionBarView<HomeViewModel>,  
 Com.Wdullaer.Materialdatetimepicker.Date.DatePickerDialog.IOnDateSetListener
 
-{% endhighlight %}
+```
 
-{% highlight csharp %}        
+```
 private void OnChooseDateButtonClick(object sender, EventArgs e)
 {
     Java.Util.Calendar now = Java.Util.Calendar.Instance;
@@ -38,7 +38,7 @@ public void OnDateSet(Com.Wdullaer.Materialdatetimepicker.Date.DatePickerDialog 
     p0.Dismiss();
 }
 		
-{% endhighlight %}
+```
 
 Make sure you are using the same version (23.1.1) of Xamarin.Android.Support.v4 package in your application project.
 
