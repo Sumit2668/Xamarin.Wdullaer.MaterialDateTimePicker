@@ -2,6 +2,8 @@
 
 This is a Xamarin.Android bindings for ["Material DateTime Picker"](https://github.com/wdullaer/MaterialDateTimePicker) from [@wdullaer](https://github.com/wdullaer)
 
+More information: [http://sorokoletov.com/2016/02/29/material-date-time-picker-available-for-xamarin-android-apps-bindings/](http://sorokoletov.com/2016/02/29/material-date-time-picker-available-for-xamarin-android-apps-bindings/)
+
 ### How to use this library (examples)
 
 Three simple steps:
