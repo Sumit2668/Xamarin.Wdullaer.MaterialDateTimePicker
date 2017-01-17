@@ -10,4 +10,26 @@
 	Vendor/MaterialDateTimePickerBinding/obj/Debug/generated/src/Com.Wdullaer.Materialdatetimepicker.Date.MonthView.cs(36,36): Error CS0534: `Com.Wdullaer.Materialdatetimepicker.Date.MonthView.MonthViewTouchHelper' does not implement inherited abstract member `Android.Support.V4.Widget.ExploreByTouchHelper.GetVisibleVirtualViews(System.Collections.Generic.IList<Java.Lang.Integer>)' (CS0534) (MaterialDateTimePickerBinding)
 	-->
 	<remove-node path="/api/package[@name='com.wdullaer.materialdatetimepicker.date']/class[@name='MonthView.MonthViewTouchHelper']" />
+
+  <!-- Change a parameter names from generic (i.e. p0) to more meaningful ones. -->
+  <attr path="/api/package[@name='com.wdullaer.materialdatetimepicker.time']/class[@name='TimePickerDialog']/method[@name='newInstance' and count(parameter)=5]/parameter[@name='p0']" 
+        name="name">callback</attr>
+  <attr path="/api/package[@name='com.wdullaer.materialdatetimepicker.time']/class[@name='TimePickerDialog']/method[@name='newInstance' and count(parameter)=5]/parameter[@name='p1']" 
+        name="name">hourOfDay</attr>
+  <attr path="/api/package[@name='com.wdullaer.materialdatetimepicker.time']/class[@name='TimePickerDialog']/method[@name='newInstance' and count(parameter)=5]/parameter[@name='p2']" 
+        name="name">minute</attr>
+  <attr path="/api/package[@name='com.wdullaer.materialdatetimepicker.time']/class[@name='TimePickerDialog']/method[@name='newInstance' and count(parameter)=5]/parameter[@name='p3']" 
+        name="name">second</attr>
+  <attr path="/api/package[@name='com.wdullaer.materialdatetimepicker.time']/class[@name='TimePickerDialog']/method[@name='newInstance' and count(parameter)=5]/parameter[@name='p4']" 
+        name="name">is24HourMode</attr>
+
+
+  <attr path="/api/package[@name='com.wdullaer.materialdatetimepicker.time']/class[@name='TimePickerDialog']/method[@name='newInstance' and count(parameter)=4]/parameter[@name='p0']" 
+        name="name">callback</attr>
+  <attr path="/api/package[@name='com.wdullaer.materialdatetimepicker.time']/class[@name='TimePickerDialog']/method[@name='newInstance' and count(parameter)=4]/parameter[@name='p1']" 
+        name="name">hourOfDay</attr>
+  <attr path="/api/package[@name='com.wdullaer.materialdatetimepicker.time']/class[@name='TimePickerDialog']/method[@name='newInstance' and count(parameter)=4]/parameter[@name='p2']" 
+        name="name">minute</attr>
+  <attr path="/api/package[@name='com.wdullaer.materialdatetimepicker.time']/class[@name='TimePickerDialog']/method[@name='newInstance' and count(parameter)=4]/parameter[@name='p3']" 
+        name="name">is24HourMode</attr>
 </metadata>
